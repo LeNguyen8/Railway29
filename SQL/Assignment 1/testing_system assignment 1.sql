@@ -63,5 +63,5 @@ createdate date
 );
 create table `examquestion`(
 examID int,
-questionID varchar(50)
+questionID int
 );
