@@ -255,7 +255,4 @@ public class Program {
 			System.out.println("Phòng ban: " + accArray1[i].department.name);
 		}
 	}
-	public void test() {
-		System.out.println("Hello");
-	}
 }
