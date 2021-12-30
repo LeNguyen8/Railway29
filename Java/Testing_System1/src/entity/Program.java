@@ -300,12 +300,24 @@ public class Program {
 		System.out.println("Question 17");
 		Account[] accArray4 = { acc1, acc2, acc3 };
 		int p = 0;
-		do {System.out.println("Thông tin account thứ " + (p + 1) + " là:");
-		System.out.println("Email: " + accArray[p].email);
-		System.out.println("Fullname: " + accArray[p].fullName);
-		System.out.println("Phòng ban: " + accArray[p].department.name);
-		p++;
-		}
-		while (p < accArray1.length);
+		do {
+			System.out.println("Thông tin account thứ " + (p + 1) + " là:");
+			System.out.println("Email: " + accArray[p].email);
+			System.out.println("Fullname: " + accArray[p].fullName);
+			System.out.println("Phòng ban: " + accArray[p].department.name);
+			p++;
+		} while (p < accArray1.length);
+
+		System.out.println("Chỉ in ra 2 department đầu bằng do-while");
+		Department[] dpArray2 = { dp1, dp2, dp3 };
+		int o = 0;
+		do {
+			System.out.println("Thông tin department thứ " + (o + 1));
+			System.out.println("ID: " + dpArray[o].id);
+			System.out.println("Name: " + dpArray[o].name);
+			o++;
+		} while (o < 2);
+
 	}
+
 }
