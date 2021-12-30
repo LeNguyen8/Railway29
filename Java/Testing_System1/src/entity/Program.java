@@ -236,17 +236,13 @@ public class Program {
 
 		/*
 		 * Question 10: In ra thông tin các account bao gồm: Email, FullName và tên
-		 * phòng ban của họ theo định dạng như sau: Thông tin account thứ 1 là: 
-		 * Email: NguyenVanA@gmail.com 
-		 * Full name: Nguyễn Văn A 
-		 * Phòng ban: Sale Thông tin
-		 * account thứ 2 là: 
-		 * Email: NguyenVanB@gmail.com 
-		 * Full name: Nguyễn Văn B 
-		 * Phòng ban: Marketting
+		 * phòng ban của họ theo định dạng như sau: Thông tin account thứ 1 là: Email:
+		 * NguyenVanA@gmail.com Full name: Nguyễn Văn A Phòng ban: Sale Thông tin
+		 * account thứ 2 là: Email: NguyenVanB@gmail.com Full name: Nguyễn Văn B Phòng
+		 * ban: Marketting
 		 */
 		System.out.println("Question 10:");
-		Account[]accArray1 = {acc1, acc2, acc3 };
+		Account[] accArray1 = { acc1, acc2, acc3 };
 		for (int i = 0; i < accArray1.length; i++) {
 			System.out.println("Thông tin account thứ " + (i + 1) + " là:");
 
@@ -254,5 +250,62 @@ public class Program {
 			System.out.println("Full name: " + accArray1[i].fullName);
 			System.out.println("Phòng ban: " + accArray1[i].department.name);
 		}
+		/*
+		 * Question 11: In ra thông tin các phòng ban bao gồm: id và name theo định dạng
+		 * sau: Thông tin department thứ 1 là: Id: 1 Name: Sale Thông tin department thứ
+		 * 2 là: Id: 2 Name: Marketing
+		 */
+		System.out.println("Question 11");
+		Account[] accArray2 = { acc1, acc2, acc3 };
+		for (int i = 0; i < accArray1.length; i++) {
+			System.out.println("Id: " + accArray2[i].id);
+			System.out.println("Name: " + accArray2[i].department.name);
+		}
+		/*
+		 * Question 15: In ra các số chẵn nhỏ hơn hoặc bằng 20
+		 */
+		System.out.println("Question 15:");
+		for (int i = 0; i <= 20; i++) {
+			if (i % 2 == 0) {
+				System.out.println("Số chẵn: " + i);
+			}
+		}
+		/*
+		 * Question 16: Làm lại các Question ở phần FOR bằng cách sử dụng WHILE kết hợp
+		 * với lệnh break, continue
+		 * 
+		 */
+		System.out.println("In ra thông tin các account bằng while");
+		Account[] accArray3 = { acc1, acc2, acc3 };
+		int i = 0;
+		while (i < accArray1.length) {
+			System.out.println("Thông tin account thứ " + (i + 1) + " là:");
+			System.out.println("Email: " + accArray[i].email);
+			System.out.println("Fullname: " + accArray[i].fullName);
+			System.out.println("Phòng ban: " + accArray[i].department.name);
+			i++;
+		}
+
+		System.out.println("In ra thông tin các phòng ban bằng while");
+		Department[] dpArray1 = { dp1, dp2, dp3 };
+		int q = 0;
+		while (q < dpArray1.length) {
+			System.out.println("ID: " + dpArray[q].id);
+			System.out.println("Name: " + dpArray[q].name);
+			q++;
+		}
+		/*
+		 * Question 17: Làm với do while
+		 */
+		System.out.println("Question 17");
+		Account[] accArray4 = { acc1, acc2, acc3 };
+		int p = 0;
+		do {System.out.println("Thông tin account thứ " + (p + 1) + " là:");
+		System.out.println("Email: " + accArray[p].email);
+		System.out.println("Fullname: " + accArray[p].fullName);
+		System.out.println("Phòng ban: " + accArray[p].department.name);
+		p++;
+		}
+		while (p < accArray1.length);
 	}
 }
