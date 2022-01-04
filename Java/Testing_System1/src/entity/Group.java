@@ -10,6 +10,9 @@ public class Group {
 	public LocalDate createDate;
 	public Account[] accounts;
 
+	public Group(int i, String string) {
+	}
+
 	public void printGroup() {
 		System.out.println(
 				"Thông tin nhóm: " + id + ", tên :" + name + ", người tạo :" + creator + ", ngày tạo :" + createDate);

@@ -7,6 +7,16 @@ public class Position {
 	public enum PositionName {
 		Dev, Test, Scrum_Master, PM
 	}
+
+	public Position(int i, PositionName name) {
+		this.id = i;
+		this.name = name;
+	}
+
+	public Position() {
+
+	}
+
 	public void printPosition() {
 		System.out.println("Thông tin vị trí: " + id + ",tên :" + name);
 	}
